@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script>
+
+	function pulalinha(){
+		document.write("<br>");
+	}
+	function mostrar(text){
+		document.write(text);
+		pulalinha();
+	}
+	var numeroPensado = Math.round(Math.random() * 10);
+
+	var tentativa = 1;
+
+	while(tentativa<=3){
+
+		var chute = parseInt(prompt("Digite um número de 0 à 10 : "));
+
+		if (chute == numeroPensado) {
+			mostrar("Você acertou!");
+			break;
+		}else{
+			mostrar("Você errou! O número pensado foi " + numeroPensado + " !");
+		}
+		tentativa++;
+
+	}
+
+	
+
+</script>

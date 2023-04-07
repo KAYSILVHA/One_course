@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script>
+
+	function pulalinha(){
+		document.write("<br>");
+	}
+	function mostrar(text){
+		document.write(text);
+		pulalinha();
+	}
+	
+	var anoCopaInicio = 1930;
+	var dataAtual = new Date();
+	var anoAtual = dataAtual. getFullYear();
+
+	while(anoCopaInicio < anoAtual){
+		mostrar("Teve copa em " + anoCopaInicio);
+		anoCopaInicio += 4;
+		pulalinha();
+
+	}
+
+	mostrar("FIM");
+
+</script>
